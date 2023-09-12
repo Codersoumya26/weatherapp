@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Codersoumya26/weatherapp#readme",
   "dependencies": {
+    "chalk": "^4.1.2",
     "request": "^2.88.0"
   }
 }
