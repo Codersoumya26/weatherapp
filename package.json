@@ -1,0 +1,24 @@
+{
+  "name": "weatherapp",
+  "version": "1.0.0",
+  "description": "## Installation",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Codersoumya26/weatherapp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Codersoumya26/weatherapp/issues"
+  },
+  "homepage": "https://github.com/Codersoumya26/weatherapp#readme",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "request": "^2.88.0"
+  }
+}
