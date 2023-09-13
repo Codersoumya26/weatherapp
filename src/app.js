@@ -7,9 +7,11 @@ const port = 3000
 
 // Define paths for express configuration
 const publicDirectoryPath = path.join(__dirname, '../public');
+const viewsPath = path.join(__dirname, '../templates');
 
 // setup handlebars engine and views locations
 app.set('view engine', 'hbs');
+app.set('views', viewsPath);
 
 
 // setup static directory to serve static files
@@ -20,6 +22,17 @@ app.get('', (req, res) => {
         title: 'Weather Forecast Application',
         name: 'Soumya Dipta',
     })
+})
+
+app.get('/about', (req, res) => {
+    res.render('about', {
+        title: 'Weather Forecast Application',
+        name: 'Soumya Dipta',
+    })
+})
+
+app.get('/contact', (req, res) => {
+    res.render('contact')
 })
 
 app.get('/weather', (req, res) => {
