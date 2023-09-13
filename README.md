@@ -34,4 +34,7 @@ node terminal/app.js "Howrah"
 node src/app.js
 #or
 nodemon src/app.js
+#or
+
+nodemon src/app.js -e js,hbs
 ```
