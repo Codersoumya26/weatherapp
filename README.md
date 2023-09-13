@@ -13,5 +13,5 @@
 * Run following command in terminal
 
 ```bash
-node app.js "Howrah"
+node terminal/app.js "Howrah"
 ```
