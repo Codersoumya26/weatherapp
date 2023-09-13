@@ -16,6 +16,8 @@
 
 * npm i hbs
 
+* npm i path
+
 ## command to get output
 
 * Run following command in terminal
