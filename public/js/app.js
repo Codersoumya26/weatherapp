@@ -1,5 +1,3 @@
-console.log("Client Side javascript file is loaded")
-
 const weatherForm = document.querySelector('form')
 const search = document.querySelector('#location')
 const place = document.querySelector('#place')
@@ -11,6 +9,7 @@ const errorMessage = document.querySelector('#errorMessage')
 // Get references to the weather card and error card elements
 const weatherCard = document.getElementById("weatherCard");
 const errorCard = document.getElementById("errorCard");
+const weatherIcon = document.getElementById("weather-icon");
 
 
 // Display the error card
@@ -40,6 +39,9 @@ weatherForm.addEventListener('submit', (event) => {
             weather.textContent = data.weather_descriptions,
             temperature.textContent = data.temperature,
             feelslike.textContent = data.feelslike
+
+            // Set the background image URL
+            weatherIcon.style.backgroundImage = "url('" + data.weather_icons + "')";
         }
     })
 })

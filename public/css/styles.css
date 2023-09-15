@@ -87,8 +87,11 @@ body {
 }
 
 .weather-icon {
-    font-size: 48px;
-    margin-top: 10px;
+    width: 64px;
+    height: 64px;
+    background-size: cover;
+    display: inline-block;
+    margin-left: 40%;
 }
 
 .contact-container {
