@@ -25,13 +25,19 @@
         </div>
         <div class="row mt-4">
             <div class="col-md-6 offset-md-3">
-                <div class="card">
+                <div id="weatherCard" class="card">
                     <div class="card-body">
                         <h3 class="card-title" id="place">City Name, Country</h3>
-                        <p class="card-text">Here, The weather feels like <span id="weather-condition">Sunny</span></p>
-                        <p class="card-text">It is currently <span id="temperature">25</span> °C out. But it feels like <span id="feelslike">30</span> °C </p>
-                        {{!-- <i class="weather-icon fas fa-sun"></i> --}}
+                        <p class="card-text">Here, The weather feels like <span id="weather-condition">----</span></p>
+                        <p class="card-text">It is currently <span id="temperature">--</span> °C out. But it feels like <span id="feelslike">--</span> °C </p>
                     </div>
+                </div>
+
+                <div id="errorCard" class="error-card">
+                    <div class="error-message">
+                        Oops!
+                    </div>
+                    <p id="errorMessage">Please check your input and try again.</p>
                 </div>
             </div>
         </div>

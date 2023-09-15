@@ -7,13 +7,13 @@ body {
 
 .index-container {
     max-width: 1000px;
+    min-height: 480px;
     margin: 0 auto;
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     margin-top: 20px;
-    padding-bottom: 130px;
 }
 
 /* Card styles */
@@ -47,6 +47,28 @@ body {
 /* Optional: Add a background color to card on hover */
 .index-container .card:hover {
     background-color: #f7f7f7;
+    transition: background-color 0.3s ease;
+}
+
+/* Error Card styles */
+.index-container .error-card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #ff6b6b; /* Red background for errors */
+    padding: 20px;
+    text-align: center;
+}
+
+.index-container .error-message {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+/* Optional: Add a background color to error card on hover */
+.index-container .error-card:hover {
+    background-color: #ff5252;
     transition: background-color 0.3s ease;
 }
 
