@@ -19,6 +19,9 @@
   "homepage": "https://github.com/Codersoumya26/weatherapp#readme",
   "dependencies": {
     "chalk": "^4.1.2",
+    "express": "^4.18.2",
+    "hbs": "^4.2.0",
+    "path": "^0.12.7",
     "request": "^2.88.0"
   }
 }

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Weather Forecast </title>
+    <!-- Include Bootstrap CSS (you can replace this with your own styling) -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Include your custom CSS (if any) -->
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    {{>header}}    
+    <div class="index-container">
+        <div class="row">
+            <div class="col-md-4 offset-md-4">
+                <form>
+                    <div class="form-group">
+                        <label for="location">Enter Location:</label>
+                        <input type="text" class="form-control" id="location" placeholder="City, Country">
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Get Weather</button>
+                </form>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-6 offset-md-3">
+                <div id="weatherCard" class="card">
+                    <div class="card-body">
+                        <h3 class="card-title" id="place">City Name, Country</h3>
+                        <p class="card-text">Here, The weather feels like <span id="weather-condition">----</span></p>
+                        <p class="card-text">It is currently <span id="temperature">--</span> °C out. But it feels like <span id="feelslike">--</span> °C </p>
+                    </div>
+                </div>
+
+                <div id="errorCard" class="error-card">
+                    <div class="error-message">
+                        Oops!
+                    </div>
+                    <p id="errorMessage">Please check your input and try again.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{> footer}}
+    <!-- Include your custom JavaScript for fetching weather data and updating the page -->
+    <script src="/js/app.js"></script>
+</body>
+</html>

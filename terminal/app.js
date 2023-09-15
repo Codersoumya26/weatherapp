@@ -1,6 +1,6 @@
 const chalk = require('chalk');
-const geoCode = require('./utils/geocode')
-const forecast = require('./utils/weather')
+const geoCode = require('./geocode')
+const forecast = require('./weather')
 
 const location = process.argv[2]
 
