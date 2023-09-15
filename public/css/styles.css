@@ -6,24 +6,48 @@ body {
 }
 
 .index-container {
-    max-width: 600px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     margin-top: 20px;
-    padding-bottom: 122px;
+    padding-bottom: 130px;
 }
 
-.index-container h3.card-title {
-    font-size: 28px;
+/* Card styles */
+.index-container .card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding: 30px;
+    min-width: 240px;
+}
+
+.index-container .card-title {
+    font-size: 24px;
+    color: #333;
     margin-bottom: 10px;
 }
 
-.index-container p.card-text {
+.index-container .card-text {
     font-size: 18px;
-    margin: 5px 0;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Additional styling for spans within card-text */
+.index-container .card-text span {
+    font-weight: bold;
+    color: #007BFF;
+}
+
+/* Optional: Add a background color to card on hover */
+.index-container .card:hover {
+    background-color: #f7f7f7;
+    transition: background-color 0.3s ease;
 }
 
 .form-group {
